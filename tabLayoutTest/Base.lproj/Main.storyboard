@@ -1,13 +1,760 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6AO-t5-GeF">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
+        <!--Landing View Controller-->
+        <scene sceneID="lKG-Ez-Os4">
+            <objects>
+                <viewController id="tSW-ee-MxV" customClass="LandingViewController" customModule="tabLayoutTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XvP-fa-9M2"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bgm-Oz-Q3E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A9O-8Y-oud">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="d8n-I2-NRq">
+                                <rect key="frame" x="-6" y="136" width="332" height="296"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="287-BZ-XtX">
+                                <rect key="frame" x="20" y="496" width="132" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12914346767786614" green="0.076160236454597144" blue="0.2696090511794873" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Uber GST Facts"/>
+                                <connections>
+                                    <action selector="goToGstFactsPAge:" destination="tSW-ee-MxV" eventType="touchUpInside" id="xTO-IT-fH6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmS-Ez-uRH">
+                                <rect key="frame" x="160" y="496" width="140" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.9418245960512821" green="0.26533451713231992" blue="0.13283799018318737" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FaI-AX-P6P"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CDb-Uq-t5q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2" y="705"/>
+        </scene>
+        <!--Uber Tax Env View Controller-->
+        <scene sceneID="43x-DD-tZl">
+            <objects>
+                <viewController storyboardIdentifier="UberTaxEnvViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yWn-6V-b08" customClass="UberTaxEnvViewController" customModule="tabLayoutTest" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pcv-Oc-tuK"/>
+                        <viewControllerLayoutGuide type="bottom" id="5LD-im-Knb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Iox-GC-1ac">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CbK-LO-Kib">
+                                <rect key="frame" x="0.0" y="441" width="320" height="36"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.030318010284060781" green="0.66839401600689485" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Read more from ATO"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="When you drive Uber you are not an employee. You’re a contractor and should therefore hold an Australian Business Number (ABN)." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBC-QH-evm">
+                                <rect key="frame" x="26" y="17" width="294" height="34"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="9"/>
+                                <color key="textColor" red="1" green="0.1064949317950401" blue="0.157211545005989" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t07-zv-tf0">
+                                <rect key="frame" x="26" y="83" width="294" height="36"/>
+                                <animations/>
+                                <string key="text">Uber drivers should register immediately and start to lodge quarterly Business Activity Statements (BAS) to pay their GST obligations.</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="9"/>
+                                <color key="textColor" red="1" green="0.22943137320000001" blue="0.20294896709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DdG-PK-bek">
+                                <rect key="frame" x="26" y="118" width="294" height="46"/>
+                                <animations/>
+                                <string key="text">All your activity (Driving History) and personal details (name and plates) are documented in the Uber Partner App and available for the ATO to see.</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="9"/>
+                                <color key="textColor" red="1" green="0.22943137320000001" blue="0.20294896709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line_separator_big" translatesAutoresizingMaskIntoConstraints="NO" id="gCM-MF-mht">
+                                <rect key="frame" x="-28" y="50" width="348" height="1"/>
+                                <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.20000000000000001"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line_separator_big" translatesAutoresizingMaskIntoConstraints="NO" id="xzI-i6-hSA">
+                                <rect key="frame" x="-148" y="83" width="468" height="1"/>
+                                <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.20000000000000001"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line_separator_big" translatesAutoresizingMaskIntoConstraints="NO" id="1o0-28-M6s">
+                                <rect key="frame" x="0.0" y="118" width="320" height="1"/>
+                                <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.20000000000000001"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line_separator_big" translatesAutoresizingMaskIntoConstraints="NO" id="wcL-U1-jsL">
+                                <rect key="frame" x="0.0" y="163" width="320" height="1"/>
+                                <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.20000000000000001"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="If you don’t comply, you may be liable to hefty fines, interest and retrospective tax repayments. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPn-MH-yFl">
+                                <rect key="frame" x="26" y="163" width="327" height="34"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="9"/>
+                                <color key="textColor" red="1" green="0.22943137320000001" blue="0.20294896709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AoJ-d0-e6K">
+                                <rect key="frame" x="26" y="196" width="294" height="51"/>
+                                <animations/>
+                                <string key="text">It is highly unlikely Uber will help you out of your personal ATO troubles (like a State Transport Fine) so it’s important to stay diligent with your tax obligations.</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="9"/>
+                                <color key="textColor" red="1" green="0.22943137320000001" blue="0.20294896709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90a-Wc-3WG">
+                                <rect key="frame" x="20" y="241" width="294" height="51"/>
+                                <animations/>
+                                <string key="text">“All Uber partners are independent contractors, so we do not withhold any taxes and partners are entirely responsible for their own tax obligations.” (Uber Australia)</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="9"/>
+                                <color key="textColor" red="1" green="0.22943137320000001" blue="0.20294896709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="From August 2015, the Australian Taxation Office (ATO) confirmed all Uber drivers are required to register for GST." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyP-94-PQN">
+                                <rect key="frame" x="26" y="50" width="294" height="34"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="9"/>
+                                <color key="textColor" red="1" green="0.2294313732047335" blue="0.20294896712827326" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line_separator_big" translatesAutoresizingMaskIntoConstraints="NO" id="b17-gd-i3g">
+                                <rect key="frame" x="0.0" y="196" width="320" height="1"/>
+                                <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.20000000000000001"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line_separator_big" translatesAutoresizingMaskIntoConstraints="NO" id="Dhd-5e-gTN">
+                                <rect key="frame" x="0.0" y="241" width="320" height="1"/>
+                                <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.20000000000000001"/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QuD-5e-5Hr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="331" y="1001"/>
+        </scene>
+        <!--Gst Basics View Controller-->
+        <scene sceneID="7hL-e9-aa3">
+            <objects>
+                <viewController storyboardIdentifier="GstBasicsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dx7-jx-6Sk" customClass="GstBasicsViewController" customModule="tabLayoutTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dPg-bV-MOA"/>
+                        <viewControllerLayoutGuide type="bottom" id="cFU-iZ-Wg6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5gc-vz-lAI" customClass="Gs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Iu-Ik-d2P">
+                                <rect key="frame" x="7" y="440" width="159" height="37"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.030318010279999998" green="0.66839401600000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <state key="normal" title="Read More from the ATO">
+                                    <color key="titleColor" red="0.9892108295789378" green="0.99714777682081335" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8MD-m5-Afy">
+                                <rect key="frame" x="169" y="440" width="145" height="37"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.94182459610000002" green="0.29383829979999998" blue="0.16544835250000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <state key="normal" title="GST Basics">
+                                    <color key="titleColor" red="0.98921082959999995" green="0.9971477768" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line_separator_big" translatesAutoresizingMaskIntoConstraints="NO" id="MED-30-dPw">
+                                <rect key="frame" x="0.0" y="167" width="320" height="0.0"/>
+                                <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.20000000000000001"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line_separator_big" translatesAutoresizingMaskIntoConstraints="NO" id="W7o-L8-Zyr">
+                                <rect key="frame" x="7" y="245" width="297" height="0.0"/>
+                                <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.20000000000000001"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="246" verticalHuggingPriority="240" fixedFrame="YES" text="Goods and Services Tax (GST) applies the rate of 10% on the supply of most goods and services." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDT-9c-879">
+                                <rect key="frame" x="10" y="15" width="294" height="34"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="9"/>
+                                <color key="textColor" red="1" green="0.1064949318" blue="0.15721154500000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="246" verticalHuggingPriority="240" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3m-QP-wPs">
+                                <rect key="frame" x="10" y="81" width="294" height="36"/>
+                                <animations/>
+                                <string key="text">You can offset against your taxable supplies any GST you pay on business related expenses. e.g. Fuel, Cleaning, Repairs for your vehicle.</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="9"/>
+                                <color key="textColor" red="1" green="0.22943137320000001" blue="0.20294896709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="246" verticalHuggingPriority="240" fixedFrame="YES" text="You cannot offset the Uber licensing fee since Uber is not an Australian Enterprise. No GST is paid on international services." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqa-YM-ebL">
+                                <rect key="frame" x="10" y="125" width="294" height="27"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="9"/>
+                                <color key="textColor" red="1" green="0.22943137320000001" blue="0.20294896709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="246" verticalHuggingPriority="240" fixedFrame="YES" image="line_separator_big" translatesAutoresizingMaskIntoConstraints="NO" id="S30-6i-1Jo">
+                                <rect key="frame" x="0.0" y="50" width="320" height="1"/>
+                                <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.20000000000000001"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="246" verticalHuggingPriority="240" fixedFrame="YES" image="line_separator_big" translatesAutoresizingMaskIntoConstraints="NO" id="UZI-Hz-7Uw">
+                                <rect key="frame" x="0.0" y="83" width="320" height="1"/>
+                                <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.20000000000000001"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="246" verticalHuggingPriority="240" fixedFrame="YES" image="line_separator_big" translatesAutoresizingMaskIntoConstraints="NO" id="ZnW-9E-xod">
+                                <rect key="frame" x="0.0" y="118" width="320" height="1"/>
+                                <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.20000000000000001"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="246" verticalHuggingPriority="240" fixedFrame="YES" text="At the end of each quarter you must lodge a Business Activity Statement (BAS)." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLt-RQ-dtT">
+                                <rect key="frame" x="10" y="161" width="327" height="34"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="9"/>
+                                <color key="textColor" red="1" green="0.22943137320000001" blue="0.20294896709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="246" verticalHuggingPriority="240" fixedFrame="YES" text="The difference between the GST levied on your rides and the GST credits you claim on your expenses is payable to the ATO." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLg-La-aUZ">
+                                <rect key="frame" x="10" y="194" width="294" height="51"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="9"/>
+                                <color key="textColor" red="1" green="0.22943137320000001" blue="0.20294896709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="246" verticalHuggingPriority="240" fixedFrame="YES" text="GST is payable on the gross Fare before the Uber licensing fee is deducted" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dni-8o-qMi">
+                                <rect key="frame" x="10" y="49" width="294" height="34"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="9"/>
+                                <color key="textColor" red="1" green="0.22943137320000001" blue="0.20294896709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="246" verticalHuggingPriority="240" fixedFrame="YES" image="line_separator_big" translatesAutoresizingMaskIntoConstraints="NO" id="ocf-7E-pqs">
+                                <rect key="frame" x="0.0" y="196" width="320" height="1"/>
+                                <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.20000000000000001"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="246" verticalHuggingPriority="240" fixedFrame="YES" image="line_separator_big" translatesAutoresizingMaskIntoConstraints="NO" id="eae-lm-MfY">
+                                <rect key="frame" x="0.0" y="163" width="320" height="1"/>
+                                <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.20000000000000001"/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qNq-or-2zl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="698" y="1001"/>
+        </scene>
+        <!--What To Do View Controller-->
+        <scene sceneID="RhJ-mc-5Pm">
+            <objects>
+                <viewController storyboardIdentifier="WhatToDoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UIk-r2-Dfm" customClass="WhatToDoViewController" customModule="tabLayoutTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MPS-yW-WgA"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dr2-3j-bIV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uGS-5h-wwK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jE-BK-ZJd">
+                                <rect key="frame" x="88" y="440" width="145" height="37"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.94182459610000002" green="0.29383829979999998" blue="0.16544835250000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <state key="normal" title="What to do now">
+                                    <color key="titleColor" red="0.98921082959999995" green="0.9971477768" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="246" verticalHuggingPriority="240" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xjf-nD-PT3">
+                                <rect key="frame" x="20" y="11" width="299" height="40"/>
+                                <animations/>
+                                <string key="text">If you do not have an ABN and are not registered for GST, you should do so immediately. You can get an ABN and register for GST online or by calling the ATO OR use UberBAS to do this for you</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="9"/>
+                                <color key="textColor" red="1" green="0.1064949318" blue="0.15721154500000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="246" verticalHuggingPriority="240" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUs-RS-Bdn">
+                                <rect key="frame" x="20" y="83" width="294" height="36"/>
+                                <animations/>
+                                <string key="text">Start keeping records to claim back GST input tax credits. You need a valid tax invoice for each expense.UberBAS provides a great framework for doing so using Cloud Integration.</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="9"/>
+                                <color key="textColor" red="1" green="0.22943137320000001" blue="0.20294896709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="246" verticalHuggingPriority="240" fixedFrame="YES" image="line_separator_big" translatesAutoresizingMaskIntoConstraints="NO" id="oqT-Ox-quZ">
+                                <rect key="frame" x="0.0" y="50" width="320" height="1"/>
+                                <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.20000000000000001"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="246" verticalHuggingPriority="240" fixedFrame="YES" image="line_separator_big" translatesAutoresizingMaskIntoConstraints="NO" id="M3g-n3-XYp">
+                                <rect key="frame" x="0.0" y="83" width="312" height="1"/>
+                                <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.20000000000000001"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="246" verticalHuggingPriority="240" fixedFrame="YES" image="line_separator_big" translatesAutoresizingMaskIntoConstraints="NO" id="99f-fV-GwG">
+                                <rect key="frame" x="0.0" y="118" width="320" height="1"/>
+                                <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.20000000000000001"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="246" verticalHuggingPriority="240" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHZ-y0-Kbb">
+                                <rect key="frame" x="20" y="50" width="294" height="34"/>
+                                <animations/>
+                                <string key="text">Track all your weekly gross earnings driving UberX 
+OR use UberBAS to do this for you.</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="9"/>
+                                <color key="textColor" red="1" green="0.22943137320000001" blue="0.20294896709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="246" verticalHuggingPriority="240" fixedFrame="YES" text="Lodge a Business Activity Statement (BAS) on a quarterly basis. OR use UberBAS to do this for you." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bD-2C-fhZ">
+                                <rect key="frame" x="20" y="127" width="294" height="27"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="9"/>
+                                <color key="textColor" red="1" green="0.22943137320000001" blue="0.20294896709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jzu-Oo-bOd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1030" y="1001"/>
+        </scene>
+        <!--About UberBAS View Controller-->
+        <scene sceneID="gM1-FI-YSl">
+            <objects>
+                <viewController storyboardIdentifier="AboutUberBASViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c9G-DC-ako" customClass="AboutUberBASViewController" customModule="tabLayoutTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V8S-Y0-iBe"/>
+                        <viewControllerLayoutGuide type="bottom" id="CAi-yB-mu0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DRJ-KH-adA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="246" verticalHuggingPriority="240" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rr-lc-Leg">
+                                <rect key="frame" x="20" y="10" width="299" height="43"/>
+                                <animations/>
+                                <string key="text">With UberBAS your GST compliance has never been easier! Let experts track your income and expenses seemlessly in the cloud so you can focus your time on driving. Using a cloud-integrated Google-Drive Folder System we can handle the following tasks.</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="9"/>
+                                <color key="textColor" red="1" green="0.1064949318" blue="0.15721154500000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="246" verticalHuggingPriority="240" fixedFrame="YES" image="line_separator_big" translatesAutoresizingMaskIntoConstraints="NO" id="YZd-zU-LwV">
+                                <rect key="frame" x="0.0" y="61" width="320" height="1"/>
+                                <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.20000000000000001"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="246" verticalHuggingPriority="240" fixedFrame="YES" image="line_separator_big" translatesAutoresizingMaskIntoConstraints="NO" id="Mdp-qh-Vfo">
+                                <rect key="frame" x="0.0" y="96" width="320" height="1"/>
+                                <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.20000000000000001"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="google_drive_icon" translatesAutoresizingMaskIntoConstraints="NO" id="5bU-BC-UFv">
+                                <rect key="frame" x="20" y="67" width="20" height="18"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Train you to use Google Drive Cloud Integration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Jn-jn-6cD">
+                                <rect key="frame" x="48" y="67" width="262" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                <color key="textColor" red="1" green="0.1055604415179785" blue="0.12735884319030222" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="246" verticalHuggingPriority="240" fixedFrame="YES" image="line_separator_big" translatesAutoresizingMaskIntoConstraints="NO" id="BWs-2M-TSL">
+                                <rect key="frame" x="-1" y="125" width="320" height="1"/>
+                                <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.20000000000000001"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="handle_icon" translatesAutoresizingMaskIntoConstraints="NO" id="VFK-dd-bo7">
+                                <rect key="frame" x="20" y="98" width="20" height="18"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Handle day-to-day record-keeping" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJZ-f0-pEI">
+                                <rect key="frame" x="48" y="98" width="262" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                <color key="textColor" red="1" green="0.1055604415" blue="0.12735884319999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="246" verticalHuggingPriority="240" fixedFrame="YES" image="line_separator_big" translatesAutoresizingMaskIntoConstraints="NO" id="FrI-Fo-EFr">
+                                <rect key="frame" x="-1" y="151" width="320" height="1"/>
+                                <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.20000000000000001"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="note_icon" translatesAutoresizingMaskIntoConstraints="NO" id="LFa-tG-eYx">
+                                <rect key="frame" x="20" y="128" width="20" height="18"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tally all end of quarter totals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3R-VP-d0B">
+                                <rect key="frame" x="48" y="124" width="262" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                <color key="textColor" red="1" green="0.1055604415" blue="0.12735884319999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="246" verticalHuggingPriority="240" fixedFrame="YES" image="line_separator_big" translatesAutoresizingMaskIntoConstraints="NO" id="zXO-lB-tzA">
+                                <rect key="frame" x="0.0" y="178" width="320" height="1"/>
+                                <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.20000000000000001"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="graph_icon" translatesAutoresizingMaskIntoConstraints="NO" id="pbb-Ds-hjq">
+                                <rect key="frame" x="21" y="155" width="20" height="18"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create quarterly Income Statetments to review profits generally and/ or for tax time" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIc-Cz-h6Y">
+                                <rect key="frame" x="49" y="151" width="262" height="28"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                <color key="textColor" red="1" green="0.1055604415" blue="0.12735884319999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="246" verticalHuggingPriority="240" fixedFrame="YES" image="line_separator_big" translatesAutoresizingMaskIntoConstraints="NO" id="rQd-50-9W0">
+                                <rect key="frame" x="-1" y="208" width="320" height="1"/>
+                                <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.20000000000000001"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="graph_2" translatesAutoresizingMaskIntoConstraints="NO" id="k3n-Mh-SNe">
+                                <rect key="frame" x="20" y="185" width="20" height="20"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lodge BAS based on the figures you provided us over the quarter." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rih-HZ-u5x">
+                                <rect key="frame" x="48" y="181" width="262" height="28"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                <color key="textColor" red="1" green="0.1055604415" blue="0.12735884319999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="246" verticalHuggingPriority="240" fixedFrame="YES" image="line_separator_big" translatesAutoresizingMaskIntoConstraints="NO" id="uXc-xa-lxQ">
+                                <rect key="frame" x="0.0" y="240" width="320" height="1"/>
+                                <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.20000000000000001"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mail_icon" translatesAutoresizingMaskIntoConstraints="NO" id="a43-JT-ZKa">
+                                <rect key="frame" x="15" y="217" width="25" height="20"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Provide comprehensive email and Phone Support" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hL5-FF-n0L">
+                                <rect key="frame" x="49" y="213" width="262" height="28"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                <color key="textColor" red="1" green="0.1055604415" blue="0.12735884319999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="246" verticalHuggingPriority="240" fixedFrame="YES" image="line_separator_big" translatesAutoresizingMaskIntoConstraints="NO" id="qI5-rp-h3H">
+                                <rect key="frame" x="0.0" y="267" width="320" height="1"/>
+                                <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.20000000000000001"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calculatr_icon" translatesAutoresizingMaskIntoConstraints="NO" id="XWb-J0-Qfs">
+                                <rect key="frame" x="20" y="243" width="18" height="21"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vehicle Depreciation Calculations (coming soon)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WlQ-Om-2rQ">
+                                <rect key="frame" x="49" y="240" width="262" height="28"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                <color key="textColor" red="1" green="0.1055604415" blue="0.12735884319999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yea-a5-9tt">
+                                <rect key="frame" x="4" y="399" width="159" height="37"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.030318010279999998" green="0.66839401600000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <state key="normal" title="Streamline">
+                                    <color key="titleColor" red="0.98921082959999995" green="0.9971477768" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="streamlineSelected:" destination="c9G-DC-ako" eventType="touchUpInside" id="Lue-Bb-CXC"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tex_icon" translatesAutoresizingMaskIntoConstraints="NO" id="PJx-AN-X0E">
+                                <rect key="frame" x="21" y="270" width="18" height="21"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vehicle Depreciation Calculations (coming soon)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roT-CC-1Qj">
+                                <rect key="frame" x="48" y="267" width="262" height="28"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                <color key="textColor" red="1" green="0.1055604415" blue="0.12735884319999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Peace of mind for just " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAU-8b-gev">
+                                <rect key="frame" x="67" y="332" width="138" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(the equivalent to one good ping)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZZ-Qz-c7c">
+                                <rect key="frame" x="69" y="352" width="205" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="and streamline your" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58u-P4-xS4">
+                                <rect key="frame" x="95" y="370" width="205" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$25/month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfv-Cy-UGC">
+                                <rect key="frame" x="200" y="332" width="74" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Register now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YdR-TT-U6R">
+                                <rect key="frame" x="7" y="370" width="90" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="business today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZqC-4n-7iv">
+                                <rect key="frame" x="218" y="370" width="102" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Complete the Free registration process before  signing up for UberBAS membership" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1F-xa-jSO">
+                                <rect key="frame" x="16" y="438" width="295" height="39"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.056107677723829852" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOx-em-1MD">
+                                <rect key="frame" x="166" y="399" width="145" height="37"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.94182459610000002" green="0.29383829979999998" blue="0.16544835250000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" red="0.98921082959999995" green="0.9971477768" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NUx-GJ-PqF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1385" y="1001"/>
+        </scene>
+        <!--Streamline Uber Bas-->
+        <scene sceneID="BxJ-CL-ivT">
+            <objects>
+                <viewController storyboardIdentifier="StreamlineUberBas" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ntA-TA-P4h" customClass="StreamlineUberBas" customModule="tabLayoutTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h3o-NT-Jj7"/>
+                        <viewControllerLayoutGuide type="bottom" id="coa-vp-8pX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Kq-ry-q7U">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mh-0i-ew6">
+                                <rect key="frame" x="0.0" y="104" width="320" height="61"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.67047111190154873" blue="0.18027747037134945" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.98921082959999995" green="0.9971477768" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="upload" translatesAutoresizingMaskIntoConstraints="NO" id="wp4-tP-vnu">
+                                <rect key="frame" x="256" y="115" width="53" height="37"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Forward us your Weekly Income Statements from Uber Partners" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdc-OF-8Ss">
+                                <rect key="frame" x="50" y="102" width="198" height="63"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3R-G3-bGA">
+                                <rect key="frame" x="0.0" y="165" width="320" height="61"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.33197024566792777" blue="0.15539013854374928" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.98921082959999995" green="0.9971477768" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyJ-Wt-hlA">
+                                <rect key="frame" x="0.0" y="222" width="320" height="61"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12890084462093954" green="0.69395893116098717" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.98921082959999995" green="0.9971477768" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Capture Expenses and receipts using  the Google Drive mobile app" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKE-JG-81l">
+                                <rect key="frame" x="50" y="164" width="214" height="63"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Approve End of Quarter figures before lodgement (optional)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5v-vL-J6R">
+                                <rect key="frame" x="50" y="220" width="214" height="63"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07a-g1-Oky">
+                                <rect key="frame" x="0.0" y="283" width="320" height="61"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.18204561685888379" green="0.13638183880367982" blue="0.21448317307692311" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.98921082959999995" green="0.9971477768" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Review the submitted BAS and pay the ATO the GST amount owing" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zp4-hH-0AS">
+                                <rect key="frame" x="50" y="281" width="214" height="63"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="capture_expense" translatesAutoresizingMaskIntoConstraints="NO" id="O5d-j7-zfn">
+                                <rect key="frame" x="256" y="172" width="64" height="48"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="approve" translatesAutoresizingMaskIntoConstraints="NO" id="7TE-BT-8Sl">
+                                <rect key="frame" x="264" y="230" width="56" height="43"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="review" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-xH-5I4">
+                                <rect key="frame" x="264" y="291" width="56" height="43"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Want to streamline your record-keeping even further?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgB-fr-UQh">
+                                <rect key="frame" x="19" y="361" width="282" height="42"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Setup automated email forwarding and we'll upload  and store your weekly income summaries in your Drive folder, free of charge" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3q3-DY-47a">
+                                <rect key="frame" x="20" y="405" width="282" height="49"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O99-lz-g33">
+                                <rect key="frame" x="7" y="473" width="159" height="37"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.1336691504999622" green="0.092981508290057233" blue="0.21438301282051286" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <state key="normal" title="Here's how ">
+                                    <color key="titleColor" red="0.98921082959999995" green="0.9971477768" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUI-TI-Ghb">
+                                <rect key="frame" x="169" y="473" width="145" height="37"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.94182459610000002" green="0.29383829979999998" blue="0.16544835250000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <state key="normal" title="Sign up">
+                                    <color key="titleColor" red="0.98921082959999995" green="0.9971477768" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Steps to getting your GST compliance from point A - Point B" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5w1-7m-LdA">
+                                <rect key="frame" x="25" y="58" width="235" height="46"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vfa-Q5-vrx">
+                                <rect key="frame" x="268" y="67" width="34" height="27"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="965-8R-BL6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1385" y="1644"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HWi-2Y-I3D">
+            <objects>
+                <navigationController id="6AO-t5-GeF" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hUF-Mk-r24">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tSW-ee-MxV" kind="relationship" relationship="rootViewController" id="aqu-lE-el1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Li-4P-gS9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-577" y="13"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="tabLayoutTest" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +762,57 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="627" y="230"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="C1T-sS-H39">
+            <objects>
+                <viewController id="haO-Ac-KUh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3RS-DC-0Ox"/>
+                        <viewControllerLayoutGuide type="bottom" id="mx1-fr-ID8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S1H-c8-E0t">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZA-Vu-4pf">
+                                <rect key="frame" x="99" y="43" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cgy-dL-cTN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-157" y="1244"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="approve" width="192" height="140"/>
+        <image name="calculatr_icon" width="26" height="30"/>
+        <image name="capture_expense" width="192" height="140"/>
+        <image name="google_drive_icon" width="33" height="28"/>
+        <image name="graph_2" width="32" height="30"/>
+        <image name="graph_icon" width="31" height="31"/>
+        <image name="handle_icon" width="32" height="34"/>
+        <image name="line_separator_big" width="715" height="9"/>
+        <image name="logo" width="532" height="462"/>
+        <image name="mail_icon" width="44" height="34"/>
+        <image name="note_icon" width="29" height="30"/>
+        <image name="review" width="192" height="140"/>
+        <image name="tex_icon" width="30" height="32"/>
+        <image name="upload" width="192" height="140"/>
+    </resources>
 </document>
