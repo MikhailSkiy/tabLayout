@@ -28,4 +28,8 @@ class LandingViewController: UIViewController {
 
     }
     
+    @IBAction func goRegisterPage(sender: AnyObject) {
+        let next = self.storyboard?.instantiateViewControllerWithIdentifier("UberBASViewController") as? UberBASViewController
+        self.navigationController?.pushViewController(next!, animated: true)
+    }
 }

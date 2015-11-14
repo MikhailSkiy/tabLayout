@@ -40,6 +40,9 @@
                                 <state key="normal" title="Register">
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="goRegisterPage:" destination="tSW-ee-MxV" eventType="touchUpInside" id="Ky8-v0-biT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -51,6 +54,237 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CDb-Uq-t5q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2" y="705"/>
+        </scene>
+        <!--UberBAS View Controller-->
+        <scene sceneID="c50-QZ-VaD">
+            <objects>
+                <viewController storyboardIdentifier="UberBASViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fSW-nA-Mm8" customClass="UberBASViewController" customModule="tabLayoutTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1GP-sH-z3N"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Cl-WO-3Mk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O2F-Bf-psC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgl-KS-M35">
+                                <rect key="frame" x="0.0" y="63" width="162" height="162"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.023443413458647977" green="0.71643425846026654" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.98921082959999995" green="0.9971477768" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lodge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDD-kL-jQk">
+                                <rect key="frame" x="58" y="182" width="54" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjJ-Yt-jjq">
+                                <rect key="frame" x="159" y="63" width="161" height="162"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.75403672574323954" blue="0.15728028908716674" alpha="1" colorSpace="calibratedRGB"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Google Drive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ki3-jJ-2Ky">
+                                <rect key="frame" x="190" y="182" width="118" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lodge" translatesAutoresizingMaskIntoConstraints="NO" id="8s7-oH-8Td">
+                                <rect key="frame" x="42" y="99" width="86" height="80"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="google_drive" translatesAutoresizingMaskIntoConstraints="NO" id="Ro3-SE-ov3">
+                                <rect key="frame" x="203" y="107" width="72" height="67"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agp-Se-KPz">
+                                <rect key="frame" x="-1" y="225" width="320" height="45"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.3642052596866957" blue="0.18556403723693271" alpha="1" colorSpace="calibratedRGB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yA0-l5-a9x">
+                                <rect key="frame" x="-2" y="271" width="320" height="46"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.22330675633441166" green="0.71266277198653227" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8X-R2-v55">
+                                <rect key="frame" x="-2" y="321" width="321" height="43"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.70692560982033203" blue="0.14659012712890884" alpha="1" colorSpace="calibratedRGB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4X-Jo-U87">
+                                <rect key="frame" x="0.0" y="365" width="320" height="43"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.36420525970000001" blue="0.1855640372" alpha="1" colorSpace="calibratedRGB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZL-8K-UOr">
+                                <rect key="frame" x="-2" y="409" width="323" height="37"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.18068536683281733" green="0.61715981707321554" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6a-6a-SKi">
+                                <rect key="frame" x="-1" y="447" width="320" height="39"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.69849138785154163" blue="0.17923144495982479" alpha="1" colorSpace="calibratedRGB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIp-wF-meb">
+                                <rect key="frame" x="106" y="518" width="104" height="49"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.36420525970000001" blue="0.1855640372" alpha="1" colorSpace="calibratedRGB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBF-gG-Ee8">
+                                <rect key="frame" x="1" y="518" width="104" height="49"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.14279009200000001" green="0.096687810819999997" blue="0.31073485249999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wP-p9-Lyq">
+                                <rect key="frame" x="211" y="518" width="107" height="49"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.14279009200000001" green="0.096687810819999997" blue="0.31073485249999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tye-fp-x4Y">
+                                <rect key="frame" x="1" y="225" width="318" height="45"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.97943158359404736" green="1" blue="0.94047119182964856" alpha="1" colorSpace="calibratedRGB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivm-Nv-1kZ">
+                                <rect key="frame" x="1" y="365" width="319" height="43"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.97943158360000004" green="1" blue="0.94047119180000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="uberParnerPortal:" destination="fSW-nA-Mm8" eventType="touchUpInside" id="f6N-jZ-Ikb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1VH-B3-V06">
+                                <rect key="frame" x="1" y="409" width="320" height="37"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.97943158360000004" green="1" blue="0.94047119180000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zg-ZU-t5a">
+                                <rect key="frame" x="1" y="447" width="325" height="39"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.97943158360000004" green="1" blue="0.94047119180000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="uberDriverForumBtnClicked:" destination="fSW-nA-Mm8" eventType="touchUpInside" id="2LH-oB-ZIo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FmE-MN-nG7">
+                                <rect key="frame" x="0.0" y="483" width="325" height="34"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.63559193530960234" green="0.65172371031746024" blue="0.61946016030174433" alpha="1" colorSpace="calibratedRGB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bzd-dB-BBm">
+                                <rect key="frame" x="1" y="271" width="318" height="46"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.95722444060447309" green="1" blue="0.99943480105920435" alpha="1" colorSpace="calibratedRGB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9L-V9-xwt">
+                                <rect key="frame" x="1" y="318" width="318" height="46"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.96283281769932705" green="1" blue="0.91314441115643918" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="uberNewsroomBtnClicked:" destination="fSW-nA-Mm8" eventType="touchUpInside" id="UuI-CP-kBe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to streamline UberBAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3O-1l-5NQ">
+                                <rect key="frame" x="10" y="239" width="217" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <color key="textColor" red="0.25858061153642786" green="0.26347552910052907" blue="0.24883669288431509" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BAS Lodgement Dates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H50-ZL-MvP">
+                                <rect key="frame" x="9" y="283" width="217" height="22"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <color key="textColor" red="0.27044064153439151" green="0.27044064153439151" blue="0.27044064153439151" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Uber Newsroom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbu-fy-9Mn">
+                                <rect key="frame" x="9" y="330" width="217" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <color key="textColor" red="0.27044064150000002" green="0.27044064150000002" blue="0.27044064150000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Uber Partner Portal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqP-IB-h36">
+                                <rect key="frame" x="9" y="379" width="217" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <color key="textColor" red="0.27044064150000002" green="0.27044064150000002" blue="0.27044064150000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FAQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52Y-TV-7sg">
+                                <rect key="frame" x="10" y="415" width="217" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <color key="textColor" red="0.27044064150000002" green="0.27044064150000002" blue="0.27044064150000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="1ET-Gu-BDJ">
+                                <rect key="frame" x="283" y="239" width="24" height="22"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="vtx-bN-Enk">
+                                <rect key="frame" x="284" y="282" width="24" height="23"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="st3-Kd-OPa">
+                                <rect key="frame" x="283" y="330" width="24" height="22"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="tri-fS-M74">
+                                <rect key="frame" x="283" y="378" width="24" height="22"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="2kW-GM-2eE">
+                                <rect key="frame" x="283" y="414" width="24" height="22"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="jyl-hH-KrK">
+                                <rect key="frame" x="283" y="453" width="24" height="22"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Uber Tax+Depreciation Calculator (Coming June 2016)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWK-dn-BCo">
+                                <rect key="frame" x="1" y="489" width="317" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="call" translatesAutoresizingMaskIntoConstraints="NO" id="H5V-v2-NF6">
+                                <rect key="frame" x="33" y="521" width="41" height="39"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="message" translatesAutoresizingMaskIntoConstraints="NO" id="45I-Pq-ZQ7">
+                                <rect key="frame" x="136" y="522" width="44" height="41"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dollar" translatesAutoresizingMaskIntoConstraints="NO" id="sPj-kt-T36">
+                                <rect key="frame" x="241" y="525" width="47" height="35"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Uber Driver Forum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35O-nU-qHt">
+                                <rect key="frame" x="9" y="454" width="217" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <color key="textColor" red="0.27044064150000002" green="0.27044064150000002" blue="0.27044064150000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RMA-e3-V5S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2" y="1337"/>
         </scene>
         <!--Uber Tax Env View Controller-->
         <scene sceneID="43x-DD-tZl">
@@ -770,46 +1004,24 @@ OR use UberBAS to do this for you.</string>
             </objects>
             <point key="canvasLocation" x="627" y="230"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="C1T-sS-H39">
-            <objects>
-                <viewController id="haO-Ac-KUh" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3RS-DC-0Ox"/>
-                        <viewControllerLayoutGuide type="bottom" id="mx1-fr-ID8"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="S1H-c8-E0t">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZA-Vu-4pf">
-                                <rect key="frame" x="99" y="43" width="42" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cgy-dL-cTN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-157" y="1244"/>
-        </scene>
     </scenes>
     <resources>
         <image name="approve" width="192" height="140"/>
+        <image name="arrow" width="25" height="25"/>
         <image name="calculatr_icon" width="26" height="30"/>
+        <image name="call" width="40" height="40"/>
         <image name="capture_expense" width="192" height="140"/>
+        <image name="dollar" width="40" height="40"/>
+        <image name="google_drive" width="120" height="120"/>
         <image name="google_drive_icon" width="33" height="28"/>
         <image name="graph_2" width="32" height="30"/>
         <image name="graph_icon" width="31" height="31"/>
         <image name="handle_icon" width="32" height="34"/>
         <image name="line_separator_big" width="715" height="9"/>
+        <image name="lodge" width="120" height="120"/>
         <image name="logo" width="532" height="462"/>
         <image name="mail_icon" width="44" height="34"/>
+        <image name="message" width="40" height="40"/>
         <image name="note_icon" width="29" height="30"/>
         <image name="review" width="192" height="140"/>
         <image name="tex_icon" width="30" height="32"/>

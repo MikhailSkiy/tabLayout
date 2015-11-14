@@ -23,6 +23,7 @@
 		74406E681BF3FB7F000795FD /* WhatToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74406E671BF3FB7F000795FD /* WhatToDoViewController.swift */; };
 		74EB58C31BF52F5200C45F36 /* AboutUberBASViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB58C21BF52F5200C45F36 /* AboutUberBASViewController.swift */; };
 		74EB58C51BF5423F00C45F36 /* StreamlineUberBas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB58C41BF5423F00C45F36 /* StreamlineUberBas.swift */; };
+		74FCE7361BF69B650059B506 /* UberBASViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FCE7351BF69B650059B506 /* UberBASViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		74406E671BF3FB7F000795FD /* WhatToDoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatToDoViewController.swift; sourceTree = "<group>"; };
 		74EB58C21BF52F5200C45F36 /* AboutUberBASViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUberBASViewController.swift; sourceTree = "<group>"; };
 		74EB58C41BF5423F00C45F36 /* StreamlineUberBas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamlineUberBas.swift; sourceTree = "<group>"; };
+		74FCE7351BF69B650059B506 /* UberBASViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UberBASViewController.swift; sourceTree = "<group>"; };
 		9A6C62B582B11830C09DD304 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -135,6 +137,7 @@
 				74406E631BF3EBAA000795FD /* UberTaxEnvViewController.swift */,
 				74406E5F1BF3DD84000795FD /* ViewController2.swift */,
 				74406E331BF3D6FA000795FD /* Main.storyboard */,
+				74FCE7351BF69B650059B506 /* UberBASViewController.swift */,
 				74EB58C41BF5423F00C45F36 /* StreamlineUberBas.swift */,
 				74406E611BF3E4AB000795FD /* LandingViewController.swift */,
 				74406E361BF3D6FA000795FD /* Assets.xcassets */,
@@ -360,6 +363,7 @@
 				74406E681BF3FB7F000795FD /* WhatToDoViewController.swift in Sources */,
 				74406E5E1BF3DD4F000795FD /* ViewController1.swift in Sources */,
 				74406E601BF3DD84000795FD /* ViewController2.swift in Sources */,
+				74FCE7361BF69B650059B506 /* UberBASViewController.swift in Sources */,
 				74406E661BF3F897000795FD /* GstBasicsViewController.swift in Sources */,
 				74406E641BF3EBAA000795FD /* UberTaxEnvViewController.swift in Sources */,
 				74406E321BF3D6FA000795FD /* ViewController.swift in Sources */,
