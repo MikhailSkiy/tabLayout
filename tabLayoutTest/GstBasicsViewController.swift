@@ -19,4 +19,19 @@ class GstBasicsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func whatToDoBtnClick(sender: AnyObject) {
+        let next = self.storyboard?.instantiateViewControllerWithIdentifier("ViewController") as? ViewController
+        
+        next?.defaultPage = 2
+        
+        self.navigationController?.pushViewController(next!,animated: true)
+        
+     
+    }
+    
+    @IBAction func readMoreBtn(sender: AnyObject) {
+        let openLink = NSURL(string : "https://www.ato.gov.au/Business/GST/In-detail/Managing-GST-in-your-business/General-guides/Providing-taxi-travel-services-through-ride-sourcing-and-your-tax-obligations/")
+        UIApplication.sharedApplication().openURL(openLink!)
+    }
 }

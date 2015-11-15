@@ -19,4 +19,13 @@ class WhatToDoViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    @IBAction func moreAboutBtnClick(sender: AnyObject) {
+        let next = self.storyboard?.instantiateViewControllerWithIdentifier("ViewController") as? ViewController
+        
+        next?.defaultPage = 3
+    
+        self.navigationController?.pushViewController(next!,animated: true)
+    }
 }
