@@ -8,6 +8,7 @@
 
 import UIKit
 class UberBASViewController: UIViewController {
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,6 +28,10 @@ class UberBASViewController: UIViewController {
         openBrowser("https://newsroom.uber.com/australia/")
     }
     
+    @IBAction func faqBtnClicked(sender: AnyObject) {
+        let next = self.storyboard?.instantiateViewControllerWithIdentifier("FaqViewController") as? FaqViewController
+        self.navigationController?.pushViewController(next!, animated: true)
+    }
     @IBAction func uberParnerPortal(sender: AnyObject) {
         openBrowser("https://www.uber.com/log-in")
     }
@@ -35,4 +40,11 @@ class UberBASViewController: UIViewController {
         let openLink = NSURL(string : link)
         UIApplication.sharedApplication().openURL(openLink!)
     }
+    
+    @IBAction func lodgeBtn(sender: AnyObject) {
+        let next = self.storyboard?.instantiateViewControllerWithIdentifier("SubmissionViewController") as? SubmissionViewController
+        self.navigationController?.pushViewController(next!, animated: true)
+    }
+    
+ 
 }

@@ -22,4 +22,10 @@ class AboutUberBASViewController: UIViewController {
         let next = self.storyboard?.instantiateViewControllerWithIdentifier("StreamlineUberBas") as? StreamlineUberBas
         self.navigationController?.pushViewController(next!, animated: true)
     }
+    
+    @IBAction func registerBtnClicked(sender: AnyObject) {
+        let next = self.storyboard?.instantiateViewControllerWithIdentifier("RegisterViewController") as? RegisterViewController
+        self.navigationController?.pushViewController(next!, animated: true)
+    }
+    
 }
