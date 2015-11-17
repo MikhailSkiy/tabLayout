@@ -28,6 +28,9 @@
 		74B44D5B1BF93D1500D0C17D /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B44D5A1BF93D1500D0C17D /* ContentViewController.swift */; };
 		74B44D5D1BF942C100D0C17D /* HSUberBasFirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B44D5C1BF942C100D0C17D /* HSUberBasFirstPage.swift */; };
 		74B44D5F1BF9443E00D0C17D /* HSUberBasSecondPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B44D5E1BF9443E00D0C17D /* HSUberBasSecondPage.swift */; };
+		74C75E3B1BFBB791005635FA /* AboutUberBasBlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C75E3A1BFBB791005635FA /* AboutUberBasBlueViewController.swift */; };
+		74C75E3D1BFBD0B0005635FA /* ABNGSTRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C75E3C1BFBD0B0005635FA /* ABNGSTRegister.swift */; };
+		74C75E3F1BFBD8FB005635FA /* registerGst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C75E3E1BFBD8FB005635FA /* registerGst.swift */; };
 		74EB58C31BF52F5200C45F36 /* AboutUberBASViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB58C21BF52F5200C45F36 /* AboutUberBASViewController.swift */; };
 		74EB58C51BF5423F00C45F36 /* StreamlineUberBas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB58C41BF5423F00C45F36 /* StreamlineUberBas.swift */; };
 		74FCE7361BF69B650059B506 /* UberBASViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FCE7351BF69B650059B506 /* UberBASViewController.swift */; };
@@ -83,6 +86,9 @@
 		74B44D5A1BF93D1500D0C17D /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		74B44D5C1BF942C100D0C17D /* HSUberBasFirstPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSUberBasFirstPage.swift; sourceTree = "<group>"; };
 		74B44D5E1BF9443E00D0C17D /* HSUberBasSecondPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSUberBasSecondPage.swift; sourceTree = "<group>"; };
+		74C75E3A1BFBB791005635FA /* AboutUberBasBlueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUberBasBlueViewController.swift; sourceTree = "<group>"; };
+		74C75E3C1BFBD0B0005635FA /* ABNGSTRegister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABNGSTRegister.swift; sourceTree = "<group>"; };
+		74C75E3E1BFBD8FB005635FA /* registerGst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = registerGst.swift; sourceTree = "<group>"; };
 		74EB58C21BF52F5200C45F36 /* AboutUberBASViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUberBASViewController.swift; sourceTree = "<group>"; };
 		74EB58C41BF5423F00C45F36 /* StreamlineUberBas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamlineUberBas.swift; sourceTree = "<group>"; };
 		74FCE7351BF69B650059B506 /* UberBASViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UberBASViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +166,8 @@
 				74406E631BF3EBAA000795FD /* UberTaxEnvViewController.swift */,
 				74406E5F1BF3DD84000795FD /* ViewController2.swift */,
 				74406E331BF3D6FA000795FD /* Main.storyboard */,
+				74C75E3E1BFBD8FB005635FA /* registerGst.swift */,
+				74C75E3C1BFBD0B0005635FA /* ABNGSTRegister.swift */,
 				74480BE11BFB054E00D4D3FA /* HSUberBasFourPAge.swift */,
 				74FCE7791BF7F1D20059B506 /* RegisterViewController.swift */,
 				74FCE7751BF7C9990059B506 /* FaqTextCell.swift */,
@@ -174,6 +182,7 @@
 				74406E651BF3F897000795FD /* GstBasicsViewController.swift */,
 				74406E671BF3FB7F000795FD /* WhatToDoViewController.swift */,
 				74EB58C21BF52F5200C45F36 /* AboutUberBASViewController.swift */,
+				74C75E3A1BFBB791005635FA /* AboutUberBasBlueViewController.swift */,
 				74FCE7771BF7DE4A0059B506 /* SubmissionViewController.swift */,
 				74B44D581BF93CF300D0C17D /* PageParentViewController.swift */,
 				74B44D5A1BF93D1500D0C17D /* ContentViewController.swift */,
@@ -393,7 +402,9 @@
 			files = (
 				74EB58C51BF5423F00C45F36 /* StreamlineUberBas.swift in Sources */,
 				74EB58C31BF52F5200C45F36 /* AboutUberBASViewController.swift in Sources */,
+				74C75E3F1BFBD8FB005635FA /* registerGst.swift in Sources */,
 				74B44D5F1BF9443E00D0C17D /* HSUberBasSecondPage.swift in Sources */,
+				74C75E3D1BFBD0B0005635FA /* ABNGSTRegister.swift in Sources */,
 				74480BDE1BFAF1A100D4D3FA /* HereHowViewController.swift in Sources */,
 				74B44D5B1BF93D1500D0C17D /* ContentViewController.swift in Sources */,
 				74406E681BF3FB7F000795FD /* WhatToDoViewController.swift in Sources */,
@@ -410,6 +421,7 @@
 				74FCE7781BF7DE4A0059B506 /* SubmissionViewController.swift in Sources */,
 				74406E321BF3D6FA000795FD /* ViewController.swift in Sources */,
 				74406E621BF3E4AB000795FD /* LandingViewController.swift in Sources */,
+				74C75E3B1BFBB791005635FA /* AboutUberBasBlueViewController.swift in Sources */,
 				74B44D5D1BF942C100D0C17D /* HSUberBasFirstPage.swift in Sources */,
 				74406E301BF3D6FA000795FD /* AppDelegate.swift in Sources */,
 				74B44D591BF93CF300D0C17D /* PageParentViewController.swift in Sources */,
@@ -556,7 +568,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = tabLayoutTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cloudbookkeep.tabLayoutTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -569,7 +581,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = tabLayoutTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cloudbookkeep.tabLayoutTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";

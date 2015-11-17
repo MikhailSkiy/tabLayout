@@ -34,7 +34,7 @@ class SubmissionViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func aboutUberBasClicked(sender: AnyObject) {
-        let next = self.storyboard?.instantiateViewControllerWithIdentifier("AboutUberBASViewController") as?    AboutUberBASViewController
+        let next = self.storyboard?.instantiateViewControllerWithIdentifier("AboutUberBASBlueViewController") as?    AboutUberBASBlueViewController
         self.navigationController?.pushViewController(next!, animated: true)
     }
 }

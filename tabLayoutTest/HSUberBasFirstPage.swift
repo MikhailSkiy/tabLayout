@@ -14,4 +14,9 @@ class HSUberBasFirstPage :ContentViewController{
         
         self.navigationController?.pushViewController(next!,animated: true)
     }
+    @IBAction func sendEmail(sender: AnyObject) {
+        let email = "admin@cloudbookkeep.com"
+        let url = NSURL(string: "mailto:\(email)")
+        UIApplication.sharedApplication().openURL(url!)
+    }
 }

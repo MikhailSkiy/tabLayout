@@ -19,8 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var pageController = UIPageControl.appearance()
         pageController.pageIndicatorTintColor = UIColor.blueColor()
         pageController.currentPageIndicatorTintColor = UIColor.whiteColor()
-        pageController.backgroundColor = UIColor.clearColor()
-        pageController.alpha = 0.5
+        pageController.backgroundColor = UIColor(red: 61/255, green: 180/255, blue:250/255, alpha: 1.0 )
+       
         
 //        window = UIWindow(frame: UIScreen.mainScreen().bounds)
 //        let viewController = ViewController()

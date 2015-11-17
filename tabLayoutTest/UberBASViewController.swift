@@ -50,5 +50,16 @@ class UberBASViewController: UIViewController {
         let next = self.storyboard?.instantiateViewControllerWithIdentifier("PageParentViewController") as? PageParentViewController
         self.navigationController?.pushViewController(next!, animated: true)
     }
+    @IBAction func sentEmail(sender: AnyObject) {
+        let email = "admin@cloudbookkeep.com"
+        let url = NSURL(string: "mailto:\(email)")
+        UIApplication.sharedApplication().openURL(url!)
+    }
  
+    @IBAction func call(sender: AnyObject) {
+        let phone = "tel://1300898089";
+        let url:NSURL = NSURL(string:phone)!;
+        UIApplication.sharedApplication().openURL(url);
+    }
+
 }

@@ -37,7 +37,7 @@ class PageParentViewController: UIViewController, UIPageViewControllerDataSource
         self.addChildViewController(self.pageViewController)
         self.view.addSubview(self.pageViewController.view)
         self.pageViewController.didMoveToParentViewController(self)
-        self.view.backgroundColor = UIColor(red: (25/255.0), green: (127/255.0), blue: (216/255.0), alpha: 1.0)
+        self.view.backgroundColor = UIColor(red: 61/255, green: 180/255, blue:250/255, alpha: 1.0 )
         // Do any additional setup after loading the view, typically from a nib.
         
         
