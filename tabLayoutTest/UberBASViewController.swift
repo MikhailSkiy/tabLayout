@@ -46,5 +46,9 @@ class UberBASViewController: UIViewController {
         self.navigationController?.pushViewController(next!, animated: true)
     }
     
+    @IBAction func UberBASClicked(sender: AnyObject) {
+        let next = self.storyboard?.instantiateViewControllerWithIdentifier("PageParentViewController") as? PageParentViewController
+        self.navigationController?.pushViewController(next!, animated: true)
+    }
  
 }

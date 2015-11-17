@@ -21,6 +21,13 @@
 		74406E641BF3EBAA000795FD /* UberTaxEnvViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74406E631BF3EBAA000795FD /* UberTaxEnvViewController.swift */; };
 		74406E661BF3F897000795FD /* GstBasicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74406E651BF3F897000795FD /* GstBasicsViewController.swift */; };
 		74406E681BF3FB7F000795FD /* WhatToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74406E671BF3FB7F000795FD /* WhatToDoViewController.swift */; };
+		74480BDE1BFAF1A100D4D3FA /* HereHowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74480BDD1BFAF1A100D4D3FA /* HereHowViewController.swift */; };
+		74480BE01BFAFE9F00D4D3FA /* HSUberBasThirdPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74480BDF1BFAFE9F00D4D3FA /* HSUberBasThirdPage.swift */; };
+		74480BE21BFB054E00D4D3FA /* HSUberBasFourPAge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74480BE11BFB054E00D4D3FA /* HSUberBasFourPAge.swift */; };
+		74B44D591BF93CF300D0C17D /* PageParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B44D581BF93CF300D0C17D /* PageParentViewController.swift */; };
+		74B44D5B1BF93D1500D0C17D /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B44D5A1BF93D1500D0C17D /* ContentViewController.swift */; };
+		74B44D5D1BF942C100D0C17D /* HSUberBasFirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B44D5C1BF942C100D0C17D /* HSUberBasFirstPage.swift */; };
+		74B44D5F1BF9443E00D0C17D /* HSUberBasSecondPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B44D5E1BF9443E00D0C17D /* HSUberBasSecondPage.swift */; };
 		74EB58C31BF52F5200C45F36 /* AboutUberBASViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB58C21BF52F5200C45F36 /* AboutUberBASViewController.swift */; };
 		74EB58C51BF5423F00C45F36 /* StreamlineUberBas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB58C41BF5423F00C45F36 /* StreamlineUberBas.swift */; };
 		74FCE7361BF69B650059B506 /* UberBASViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FCE7351BF69B650059B506 /* UberBASViewController.swift */; };
@@ -69,6 +76,13 @@
 		74406E631BF3EBAA000795FD /* UberTaxEnvViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UberTaxEnvViewController.swift; sourceTree = "<group>"; };
 		74406E651BF3F897000795FD /* GstBasicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GstBasicsViewController.swift; sourceTree = "<group>"; };
 		74406E671BF3FB7F000795FD /* WhatToDoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatToDoViewController.swift; sourceTree = "<group>"; };
+		74480BDD1BFAF1A100D4D3FA /* HereHowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HereHowViewController.swift; sourceTree = "<group>"; };
+		74480BDF1BFAFE9F00D4D3FA /* HSUberBasThirdPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSUberBasThirdPage.swift; sourceTree = "<group>"; };
+		74480BE11BFB054E00D4D3FA /* HSUberBasFourPAge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSUberBasFourPAge.swift; sourceTree = "<group>"; };
+		74B44D581BF93CF300D0C17D /* PageParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageParentViewController.swift; sourceTree = "<group>"; };
+		74B44D5A1BF93D1500D0C17D /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		74B44D5C1BF942C100D0C17D /* HSUberBasFirstPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSUberBasFirstPage.swift; sourceTree = "<group>"; };
+		74B44D5E1BF9443E00D0C17D /* HSUberBasSecondPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSUberBasSecondPage.swift; sourceTree = "<group>"; };
 		74EB58C21BF52F5200C45F36 /* AboutUberBASViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUberBASViewController.swift; sourceTree = "<group>"; };
 		74EB58C41BF5423F00C45F36 /* StreamlineUberBas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamlineUberBas.swift; sourceTree = "<group>"; };
 		74FCE7351BF69B650059B506 /* UberBASViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UberBASViewController.swift; sourceTree = "<group>"; };
@@ -146,9 +160,12 @@
 				74406E631BF3EBAA000795FD /* UberTaxEnvViewController.swift */,
 				74406E5F1BF3DD84000795FD /* ViewController2.swift */,
 				74406E331BF3D6FA000795FD /* Main.storyboard */,
+				74480BE11BFB054E00D4D3FA /* HSUberBasFourPAge.swift */,
 				74FCE7791BF7F1D20059B506 /* RegisterViewController.swift */,
 				74FCE7751BF7C9990059B506 /* FaqTextCell.swift */,
 				74FCE7351BF69B650059B506 /* UberBASViewController.swift */,
+				74B44D5E1BF9443E00D0C17D /* HSUberBasSecondPage.swift */,
+				74480BDF1BFAFE9F00D4D3FA /* HSUberBasThirdPage.swift */,
 				74EB58C41BF5423F00C45F36 /* StreamlineUberBas.swift */,
 				74406E611BF3E4AB000795FD /* LandingViewController.swift */,
 				74406E361BF3D6FA000795FD /* Assets.xcassets */,
@@ -158,6 +175,10 @@
 				74406E671BF3FB7F000795FD /* WhatToDoViewController.swift */,
 				74EB58C21BF52F5200C45F36 /* AboutUberBASViewController.swift */,
 				74FCE7771BF7DE4A0059B506 /* SubmissionViewController.swift */,
+				74B44D581BF93CF300D0C17D /* PageParentViewController.swift */,
+				74B44D5A1BF93D1500D0C17D /* ContentViewController.swift */,
+				74B44D5C1BF942C100D0C17D /* HSUberBasFirstPage.swift */,
+				74480BDD1BFAF1A100D4D3FA /* HereHowViewController.swift */,
 			);
 			path = tabLayoutTest;
 			sourceTree = "<group>";
@@ -372,19 +393,26 @@
 			files = (
 				74EB58C51BF5423F00C45F36 /* StreamlineUberBas.swift in Sources */,
 				74EB58C31BF52F5200C45F36 /* AboutUberBASViewController.swift in Sources */,
+				74B44D5F1BF9443E00D0C17D /* HSUberBasSecondPage.swift in Sources */,
+				74480BDE1BFAF1A100D4D3FA /* HereHowViewController.swift in Sources */,
+				74B44D5B1BF93D1500D0C17D /* ContentViewController.swift in Sources */,
 				74406E681BF3FB7F000795FD /* WhatToDoViewController.swift in Sources */,
 				74406E5E1BF3DD4F000795FD /* ViewController1.swift in Sources */,
 				74406E601BF3DD84000795FD /* ViewController2.swift in Sources */,
+				74480BE01BFAFE9F00D4D3FA /* HSUberBasThirdPage.swift in Sources */,
 				74FCE7741BF7C8330059B506 /* FaqViewController.swift in Sources */,
 				74FCE77A1BF7F1D20059B506 /* RegisterViewController.swift in Sources */,
 				74FCE7361BF69B650059B506 /* UberBASViewController.swift in Sources */,
 				74FCE7761BF7C9990059B506 /* FaqTextCell.swift in Sources */,
 				74406E661BF3F897000795FD /* GstBasicsViewController.swift in Sources */,
+				74480BE21BFB054E00D4D3FA /* HSUberBasFourPAge.swift in Sources */,
 				74406E641BF3EBAA000795FD /* UberTaxEnvViewController.swift in Sources */,
 				74FCE7781BF7DE4A0059B506 /* SubmissionViewController.swift in Sources */,
 				74406E321BF3D6FA000795FD /* ViewController.swift in Sources */,
 				74406E621BF3E4AB000795FD /* LandingViewController.swift in Sources */,
+				74B44D5D1BF942C100D0C17D /* HSUberBasFirstPage.swift in Sources */,
 				74406E301BF3D6FA000795FD /* AppDelegate.swift in Sources */,
+				74B44D591BF93CF300D0C17D /* PageParentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
