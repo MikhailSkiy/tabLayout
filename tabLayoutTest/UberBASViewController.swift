@@ -9,13 +9,37 @@
 import UIKit
 class UberBASViewController: UIViewController {
    
+    @IBOutlet weak var container: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor(red: (195/255.0), green: (191/255.0), blue: (191/255.0), alpha: 1.0)
         
+        let defaults = NSUserDefaults.standardUserDefaults()
+        
+        if let hasBeenLauncherBefore = defaults.stringForKey("hasAppBeenLaunchedBefore")
+        {
+            //print(" N-th time app launched ")
+            container.hidden = true
+    
+        }
+        else
+        {
+            //print(" First time app launched ")
+            defaults.setBool(true, forKey: "hasAppBeenLaunchedBefore")
+            
+            container.hidden = false
+        
+        }
+        
     }
     
+    @IBAction func menuBtnClicked(sender: AnyObject) {
+        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -28,10 +52,6 @@ class UberBASViewController: UIViewController {
         openBrowser("https://newsroom.uber.com/australia/")
     }
     
-    @IBAction func faqBtnClicked(sender: AnyObject) {
-        let next = self.storyboard?.instantiateViewControllerWithIdentifier("FaqViewController") as? FaqViewController
-        self.navigationController?.pushViewController(next!, animated: true)
-    }
     @IBAction func uberParnerPortal(sender: AnyObject) {
         openBrowser("https://www.uber.com/log-in")
     }
@@ -39,6 +59,17 @@ class UberBASViewController: UIViewController {
     func openBrowser(link:String){
         let openLink = NSURL(string : link)
         UIApplication.sharedApplication().openURL(openLink!)
+    }
+    @IBAction func trackExpensesBtnClicked(sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "itms://itunes.apple.com/en/app/evernote/id281796108?mt=8")!)
+    }
+    
+    @IBAction func dropBoxBtn(sender: AnyObject) {
+         UIApplication.sharedApplication().openURL(NSURL(string: "itms://itunes.apple.com/en/app/dropbox/id327630330?mt=8")!)
+    }
+    
+    @IBAction func evernoteBnt(sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "itms://itunes.apple.com/en/app/evernote/id281796108?mt=8")!)
     }
     
     @IBAction func lodgeBtn(sender: AnyObject) {
@@ -61,5 +92,7 @@ class UberBASViewController: UIViewController {
         let url:NSURL = NSURL(string:phone)!;
         UIApplication.sharedApplication().openURL(url);
     }
+    
+    
 
 }

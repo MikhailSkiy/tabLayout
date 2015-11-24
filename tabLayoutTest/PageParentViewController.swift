@@ -40,7 +40,6 @@ class PageParentViewController: UIViewController, UIPageViewControllerDataSource
         self.view.backgroundColor = UIColor(red: 61/255, green: 180/255, blue:250/255, alpha: 1.0 )
         // Do any additional setup after loading the view, typically from a nib.
         
-        
     }
     
     override func didReceiveMemoryWarning() {

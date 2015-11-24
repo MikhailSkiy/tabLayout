@@ -11,6 +11,7 @@ import UIKit
 
 class LandingViewController: UIViewController {
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,15 +22,15 @@ class LandingViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func goToGstFactsPAge(sender: UIButton) {
+
+    @IBAction func uberFactsBtn(sender: AnyObject) {
         let next = self.storyboard?.instantiateViewControllerWithIdentifier("ViewController") as? ViewController
         self.navigationController?.pushViewController(next!, animated: true)
-
     }
-    
-    @IBAction func goRegisterPage(sender: AnyObject) {
-        let next = self.storyboard?.instantiateViewControllerWithIdentifier("UberBASViewController") as? UberBASViewController
+    @IBAction func registrBtn(sender: AnyObject) {
+        let next = self.storyboard?.instantiateViewControllerWithIdentifier("RegisterViewController") as? RegisterViewController
         self.navigationController?.pushViewController(next!, animated: true)
     }
+    
+
 }
