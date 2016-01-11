@@ -28,7 +28,7 @@ class LandingViewController: UIViewController {
         self.navigationController?.pushViewController(next!, animated: true)
     }
     @IBAction func registrBtn(sender: AnyObject) {
-        let next = self.storyboard?.instantiateViewControllerWithIdentifier("RegisterViewController") as? RegisterViewController
+        let next = self.storyboard?.instantiateViewControllerWithIdentifier("MainRegisterViewController") as? MainRegisterViewController
         self.navigationController?.pushViewController(next!, animated: true)
     }
     

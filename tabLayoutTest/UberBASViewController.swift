@@ -21,6 +21,7 @@ class UberBASViewController: UIViewController {
         if let hasBeenLauncherBefore = defaults.stringForKey("hasAppBeenLaunchedBefore")
         {
             //print(" N-th time app launched ")
+            
             container.hidden = true
     
         }
@@ -34,6 +35,11 @@ class UberBASViewController: UIViewController {
         }
         
     }
+    
+    @IBAction func CloudStorageBtn(sender: AnyObject) {
+        
+    }
+    
     
     @IBAction func menuBtnClicked(sender: AnyObject) {
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
@@ -61,7 +67,7 @@ class UberBASViewController: UIViewController {
         UIApplication.sharedApplication().openURL(openLink!)
     }
     @IBAction func trackExpensesBtnClicked(sender: AnyObject) {
-        UIApplication.sharedApplication().openURL(NSURL(string: "itms://itunes.apple.com/en/app/evernote/id281796108?mt=8")!)
+        UIApplication.sharedApplication().openURL(NSURL(string: "https://xpenditure.com/en/affiliate/CloudBookkeep")!)
     }
     
     @IBAction func dropBoxBtn(sender: AnyObject) {
@@ -69,7 +75,7 @@ class UberBASViewController: UIViewController {
     }
     
     @IBAction func evernoteBnt(sender: AnyObject) {
-        UIApplication.sharedApplication().openURL(NSURL(string: "itms://itunes.apple.com/en/app/evernote/id281796108?mt=8")!)
+        UIApplication.sharedApplication().openURL(NSURL(string: "http://voxer.com/download/")!)
     }
     
     @IBAction func lodgeBtn(sender: AnyObject) {

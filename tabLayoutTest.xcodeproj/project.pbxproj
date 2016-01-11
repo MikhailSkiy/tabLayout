@@ -29,10 +29,13 @@
 		74480BDE1BFAF1A100D4D3FA /* HereHowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74480BDD1BFAF1A100D4D3FA /* HereHowViewController.swift */; };
 		74480BE01BFAFE9F00D4D3FA /* HSUberBasThirdPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74480BDF1BFAFE9F00D4D3FA /* HSUberBasThirdPage.swift */; };
 		74480BE21BFB054E00D4D3FA /* HSUberBasFourPAge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74480BE11BFB054E00D4D3FA /* HSUberBasFourPAge.swift */; };
+		7480F4E61C07C73600D0222F /* RegisterWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7480F4E51C07C73600D0222F /* RegisterWebView.swift */; };
 		74B44D591BF93CF300D0C17D /* PageParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B44D581BF93CF300D0C17D /* PageParentViewController.swift */; };
 		74B44D5B1BF93D1500D0C17D /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B44D5A1BF93D1500D0C17D /* ContentViewController.swift */; };
 		74B44D5D1BF942C100D0C17D /* HSUberBasFirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B44D5C1BF942C100D0C17D /* HSUberBasFirstPage.swift */; };
 		74B44D5F1BF9443E00D0C17D /* HSUberBasSecondPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B44D5E1BF9443E00D0C17D /* HSUberBasSecondPage.swift */; };
+		74C003601C0E381B00F51699 /* MainRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C0035F1C0E381B00F51699 /* MainRegisterViewController.swift */; };
+		74C003621C0E3D8400F51699 /* DropboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C003611C0E3D8400F51699 /* DropboxViewController.swift */; };
 		74C75E3B1BFBB791005635FA /* AboutUberBasBlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C75E3A1BFBB791005635FA /* AboutUberBasBlueViewController.swift */; };
 		74C75E3D1BFBD0B0005635FA /* ABNGSTRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C75E3C1BFBD0B0005635FA /* ABNGSTRegister.swift */; };
 		74C75E3F1BFBD8FB005635FA /* registerGst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C75E3E1BFBD8FB005635FA /* registerGst.swift */; };
@@ -98,10 +101,13 @@
 		74480BDD1BFAF1A100D4D3FA /* HereHowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HereHowViewController.swift; sourceTree = "<group>"; };
 		74480BDF1BFAFE9F00D4D3FA /* HSUberBasThirdPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSUberBasThirdPage.swift; sourceTree = "<group>"; };
 		74480BE11BFB054E00D4D3FA /* HSUberBasFourPAge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSUberBasFourPAge.swift; sourceTree = "<group>"; };
+		7480F4E51C07C73600D0222F /* RegisterWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterWebView.swift; sourceTree = "<group>"; };
 		74B44D581BF93CF300D0C17D /* PageParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageParentViewController.swift; sourceTree = "<group>"; };
 		74B44D5A1BF93D1500D0C17D /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		74B44D5C1BF942C100D0C17D /* HSUberBasFirstPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSUberBasFirstPage.swift; sourceTree = "<group>"; };
 		74B44D5E1BF9443E00D0C17D /* HSUberBasSecondPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSUberBasSecondPage.swift; sourceTree = "<group>"; };
+		74C0035F1C0E381B00F51699 /* MainRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainRegisterViewController.swift; sourceTree = "<group>"; };
+		74C003611C0E3D8400F51699 /* DropboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropboxViewController.swift; sourceTree = "<group>"; };
 		74C75E3A1BFBB791005635FA /* AboutUberBasBlueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUberBasBlueViewController.swift; sourceTree = "<group>"; };
 		74C75E3C1BFBD0B0005635FA /* ABNGSTRegister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABNGSTRegister.swift; sourceTree = "<group>"; };
 		74C75E3E1BFBD8FB005635FA /* registerGst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = registerGst.swift; sourceTree = "<group>"; };
@@ -200,6 +206,7 @@
 				74406E631BF3EBAA000795FD /* UberTaxEnvViewController.swift */,
 				74406E5F1BF3DD84000795FD /* ViewController2.swift */,
 				74406E331BF3D6FA000795FD /* Main.storyboard */,
+				74C0035F1C0E381B00F51699 /* MainRegisterViewController.swift */,
 				7408B5281C025AFE00E61F88 /* LeftSideViewController.swift */,
 				74C75E3E1BFBD8FB005635FA /* registerGst.swift */,
 				74C75E3C1BFBD0B0005635FA /* ABNGSTRegister.swift */,
@@ -212,6 +219,7 @@
 				74EB58C41BF5423F00C45F36 /* StreamlineUberBas.swift */,
 				74406E611BF3E4AB000795FD /* LandingViewController.swift */,
 				74406E361BF3D6FA000795FD /* Assets.xcassets */,
+				7480F4E51C07C73600D0222F /* RegisterWebView.swift */,
 				74406E381BF3D6FA000795FD /* LaunchScreen.storyboard */,
 				74406E3B1BF3D6FA000795FD /* Info.plist */,
 				74406E651BF3F897000795FD /* GstBasicsViewController.swift */,
@@ -223,6 +231,7 @@
 				74B44D5A1BF93D1500D0C17D /* ContentViewController.swift */,
 				74B44D5C1BF942C100D0C17D /* HSUberBasFirstPage.swift */,
 				74480BDD1BFAF1A100D4D3FA /* HereHowViewController.swift */,
+				74C003611C0E3D8400F51699 /* DropboxViewController.swift */,
 			);
 			path = tabLayoutTest;
 			sourceTree = "<group>";
@@ -440,8 +449,10 @@
 				74C75E3F1BFBD8FB005635FA /* registerGst.swift in Sources */,
 				74B44D5F1BF9443E00D0C17D /* HSUberBasSecondPage.swift in Sources */,
 				74C75E3D1BFBD0B0005635FA /* ABNGSTRegister.swift in Sources */,
+				7480F4E61C07C73600D0222F /* RegisterWebView.swift in Sources */,
 				74480BDE1BFAF1A100D4D3FA /* HereHowViewController.swift in Sources */,
 				74B44D5B1BF93D1500D0C17D /* ContentViewController.swift in Sources */,
+				74C003601C0E381B00F51699 /* MainRegisterViewController.swift in Sources */,
 				74406E681BF3FB7F000795FD /* WhatToDoViewController.swift in Sources */,
 				7408B5271C0259D100E61F88 /* UIViewController+MMDrawerController.m in Sources */,
 				74406E5E1BF3DD4F000795FD /* ViewController1.swift in Sources */,
@@ -449,6 +460,7 @@
 				74480BE01BFAFE9F00D4D3FA /* HSUberBasThirdPage.swift in Sources */,
 				7408B5241C0259D100E61F88 /* MMDrawerBarButtonItem.m in Sources */,
 				74FCE7741BF7C8330059B506 /* FaqViewController.swift in Sources */,
+				74C003621C0E3D8400F51699 /* DropboxViewController.swift in Sources */,
 				74FCE77A1BF7F1D20059B506 /* RegisterViewController.swift in Sources */,
 				74FCE7361BF69B650059B506 /* UberBASViewController.swift in Sources */,
 				74FCE7761BF7C9990059B506 /* FaqTextCell.swift in Sources */,
