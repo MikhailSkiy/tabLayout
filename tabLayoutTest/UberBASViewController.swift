@@ -66,12 +66,14 @@ class UberBASViewController: UIViewController {
         let openLink = NSURL(string : link)
         UIApplication.sharedApplication().openURL(openLink!)
     }
+    
     @IBAction func trackExpensesBtnClicked(sender: AnyObject) {
         UIApplication.sharedApplication().openURL(NSURL(string: "https://xpenditure.com/en/affiliate/CloudBookkeep")!)
     }
     
     @IBAction func dropBoxBtn(sender: AnyObject) {
-         UIApplication.sharedApplication().openURL(NSURL(string: "itms://itunes.apple.com/en/app/dropbox/id327630330?mt=8")!)
+        openBrowser("https://www.dropbox.com/login")
+//         UIApplication.sharedApplication().openURL(NSURL(string: "itms://itunes.apple.com/en/app/dropbox/id327630330?mt=8")!)
     }
     
     @IBAction func evernoteBnt(sender: AnyObject) {

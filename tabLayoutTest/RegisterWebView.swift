@@ -14,7 +14,7 @@ class RegisterWebView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let url = NSURL (string: "https://form.jotform.co/53280216214849");
+        let url = NSURL (string: "https://form.jotform.co/53502016198855");
         let requestObj = NSURLRequest(URL: url!);
         webView.loadRequest(requestObj);
     }

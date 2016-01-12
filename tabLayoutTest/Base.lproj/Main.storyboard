@@ -410,7 +410,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCI-9k-m31">
-                                <rect key="frame" x="-1" y="362" width="320" height="159"/>
+                                <rect key="frame" x="-1" y="278" width="320" height="243"/>
                                 <color key="backgroundColor" red="0.18466492432867188" green="0.66450897221898009" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal">
                                     <color key="titleColor" red="1" green="0.975803066" blue="0.97935888449999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -424,18 +424,12 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kd8-M3-OwP">
-                                <rect key="frame" x="-1" y="278" width="321" height="84"/>
+                                <rect key="frame" x="5" y="278" width="315" height="84"/>
                                 <color key="backgroundColor" red="0.17353444870000001" green="0.17369348600000001" blue="0.27292080029999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal">
                                     <color key="titleColor" red="1" green="0.975803066" blue="0.97935888449999997" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Google Drive: Manual or Auto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPh-Tw-C7H">
-                                <rect key="frame" x="58" y="309" width="227" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Uber BAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZQ-Bf-a1o">
                                 <rect key="frame" x="13" y="362" width="98" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -467,12 +461,17 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e86-cA-Fau">
+                                <rect key="frame" x="111" y="65" width="99" height="46"/>
+                                <connections>
+                                    <action selector="UberBasInvisibleBtnClicked:" destination="7sV-IH-WHs" eventType="touchUpInside" id="BLs-hp-Dfj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="GoogleDriveManOrAuto" destination="tPh-Tw-C7H" id="GD0-KJ-zfx"/>
                         <outlet property="ManualBas" destination="yym-9F-b8f" id="OSK-Qs-Ecf"/>
                         <outlet property="UberBas" destination="1Vt-iG-gFo" id="6x6-R9-sJ0"/>
                     </connections>
@@ -494,21 +493,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LD3-ce-iao">
-                                <rect key="frame" x="0.0" y="44" width="320" height="387"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="339"/>
                                 <color key="backgroundColor" red="0.043754133597883604" green="0.043754133597883604" blue="0.043754133597883604" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hK-Ue-968">
-                                <rect key="frame" x="0.0" y="92" width="320" height="45"/>
+                                <rect key="frame" x="0.0" y="138" width="320" height="45"/>
                                 <color key="backgroundColor" red="0.089710623980000001" green="0.67504050309999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="AboutUberBasBtnClicked:" destination="WuH-OQ-gC9" eventType="touchUpInside" id="veL-l5-FNs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VN1-uM-3g6">
-                                <rect key="frame" x="0.0" y="46" width="320" height="45"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="45"/>
                                 <color key="backgroundColor" red="0.089710623980000001" green="0.67504050309999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="AboutUberBasBtnClicked:" destination="WuH-OQ-gC9" eventType="touchUpInside" id="Eo8-8B-E3J"/>
@@ -516,17 +515,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OhF-Lz-q3e">
-                                <rect key="frame" x="0.0" y="138" width="320" height="45"/>
-                                <color key="backgroundColor" red="0.089710623980000001" green="0.67504050309999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="UberGstFactsBtnClicked:" destination="WuH-OQ-gC9" eventType="touchUpInside" id="9j9-Wc-Hbm"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0b-CO-reY">
                                 <rect key="frame" x="0.0" y="184" width="320" height="45"/>
                                 <color key="backgroundColor" red="0.089710623980000001" green="0.67504050309999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <action selector="RegisterForAbnGstBtnClicked:" destination="WuH-OQ-gC9" eventType="touchUpInside" id="26N-rm-wye"/>
+                                    <action selector="UberGstFactsBtnClicked:" destination="WuH-OQ-gC9" eventType="touchUpInside" id="9j9-Wc-Hbm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhb-u5-BaX">
@@ -558,19 +550,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About UberBAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ae-uM-hNc">
-                                <rect key="frame" x="41" y="109" width="112" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.96203489539999998" green="0.99928405769999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Uber GST Facts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o58-7d-H2F">
                                 <rect key="frame" x="41" y="150" width="112" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.96203489539999998" green="0.99928405769999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Register for ABN/GST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rs-bN-6ld">
-                                <rect key="frame" x="41" y="191" width="147" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Uber GST Facts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o58-7d-H2F">
+                                <rect key="frame" x="41" y="196" width="112" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.96203489539999998" green="0.99928405769999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -606,13 +592,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="about-icon-hover" translatesAutoresizingMaskIntoConstraints="NO" id="6z4-my-6LI">
-                                <rect key="frame" x="15" y="108" width="18" height="22"/>
+                                <rect key="frame" x="14" y="150" width="18" height="22"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="gWG-kD-veJ">
+                                <rect key="frame" x="9" y="104" width="27" height="26"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fact-icon-hover" translatesAutoresizingMaskIntoConstraints="NO" id="GOB-kh-E0Y">
-                                <rect key="frame" x="14" y="150" width="21" height="20"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="register-send-icon-hover" translatesAutoresizingMaskIntoConstraints="NO" id="flG-SY-A1c">
-                                <rect key="frame" x="15" y="191" width="18" height="22"/>
+                                <rect key="frame" x="15" y="196" width="21" height="20"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="faq-icon-hover" translatesAutoresizingMaskIntoConstraints="NO" id="25N-a8-ryo">
                                 <rect key="frame" x="14" y="352" width="18" height="20"/>
@@ -627,7 +613,7 @@
                                 <rect key="frame" x="213" y="249" width="32" height="24"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NjR-cC-rDU">
-                                <rect key="frame" x="41" y="63" width="112" height="21"/>
+                                <rect key="frame" x="41" y="109" width="112" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.96203489539999998" green="0.99928405769999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -757,12 +743,6 @@
                                 <color key="textColor" red="0.27044064150000002" green="0.27044064150000002" blue="0.27044064150000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Uber Partner Portal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqP-IB-h36">
-                                <rect key="frame" x="9" y="345" width="217" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
-                                <color key="textColor" red="0.27044064150000002" green="0.27044064150000002" blue="0.27044064150000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="1ET-Gu-BDJ">
                                 <rect key="frame" x="283" y="301" width="24" height="22"/>
                             </imageView>
@@ -884,11 +864,17 @@
                                 <rect key="frame" x="298" y="259" width="20" height="20"/>
                             </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2f0-aX-LRY">
-                                <rect key="frame" x="3" y="272" width="322" height="376"/>
+                                <rect key="frame" x="-1" y="486" width="322" height="376"/>
                                 <connections>
                                     <segue destination="J26-wI-Bjw" kind="embed" id="IyC-xE-Rag"/>
                                 </connections>
                             </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Uber Partner Portal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqP-IB-h36">
+                                <rect key="frame" x="9" y="345" width="217" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <color key="textColor" red="0.27044064150000002" green="0.27044064150000002" blue="0.27044064150000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -2588,6 +2574,7 @@ OR use UberBAS to do this for you.</string>
         <image name="graph_icon" width="31" height="31"/>
         <image name="gst_basic" width="376" height="333"/>
         <image name="handle_icon" width="32" height="34"/>
+        <image name="home" width="36" height="36"/>
         <image name="how-icon-hover" width="25" height="18"/>
         <image name="info" width="15" height="15"/>
         <image name="left-menu" width="13" height="11"/>
@@ -2601,7 +2588,6 @@ OR use UberBAS to do this for you.</string>
         <image name="note_icon" width="29" height="30"/>
         <image name="plus" width="33" height="37"/>
         <image name="privacy_icon" width="98" height="103"/>
-        <image name="register-send-icon-hover" width="25" height="26"/>
         <image name="review" width="192" height="140"/>
         <image name="sign-up-hover" width="25" height="21"/>
         <image name="tax-compliance" width="188" height="142"/>

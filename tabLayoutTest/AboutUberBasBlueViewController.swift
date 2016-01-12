@@ -28,8 +28,14 @@ class AboutUberBASBlueViewController: UIViewController {
         self.navigationController?.pushViewController(next!, animated: true)
     }
     @IBAction func registerBtnSelected(sender: AnyObject) {
-        let next = self.storyboard?.instantiateViewControllerWithIdentifier("RegisterViewController") as? RegisterViewController
-        self.navigationController?.pushViewController(next!, animated: true)
+        
+        var aboutViewController = self.storyboard?.instantiateViewControllerWithIdentifier("RegisterWebView") as! RegisterWebView
+        
+        var aboutNavController = UINavigationController(rootViewController: aboutViewController)
+        
+        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        appDelegate.centerContainer!.centerViewController = aboutNavController
     }
     
 }

@@ -57,14 +57,15 @@ class LeftSideViewController: UIViewController {
     }
     
     @IBAction func faqBtnClicked(sender: AnyObject) {
-        var aboutViewController = self.storyboard?.instantiateViewControllerWithIdentifier("FaqViewController") as! FaqViewController
-        
-        var aboutNavController = UINavigationController(rootViewController: aboutViewController)
-        
-        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        
-        appDelegate.centerContainer!.centerViewController = aboutNavController
-        appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+//        var aboutViewController = self.storyboard?.instantiateViewControllerWithIdentifier("FaqViewController") as! FaqViewController
+//        
+//        var aboutNavController = UINavigationController(rootViewController: aboutViewController)
+//        
+//        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+//        
+//        appDelegate.centerContainer!.centerViewController = aboutNavController
+//        appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+        openBrowser("https://www.etax.com.au/uber-tax-guide-for-uber-drivers/")
     }
     @IBAction func HomeBtnClicked(sender: AnyObject) {
         var aboutViewController = self.storyboard?.instantiateViewControllerWithIdentifier("UberBASViewController") as! UberBASViewController
@@ -91,6 +92,11 @@ class LeftSideViewController: UIViewController {
     
     @IBAction func ContactUsBtnClicked(sender: AnyObject) {
         let openLink = NSURL(string : "http://www.cloudbookkeep.com/contact/")
+        UIApplication.sharedApplication().openURL(openLink!)
+    }
+    
+    func openBrowser(link:String){
+        let openLink = NSURL(string : link)
         UIApplication.sharedApplication().openURL(openLink!)
     }
 }

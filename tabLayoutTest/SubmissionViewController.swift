@@ -22,11 +22,19 @@ class SubmissionViewController: UIViewController {
         UberBas.layer.borderColor = UIColor(red: 255/255, green: 255/255, blue:255/255, alpha: 1.0 ).CGColor
         
         
-        GoogleDriveManOrAuto.layer.borderWidth = 1
-        GoogleDriveManOrAuto.layer.borderColor = UIColor( red: 255/255, green: 255/255, blue:255/255, alpha: 1.0 ).CGColor
+
         
          view.backgroundColor = UIColor(red: (51/255.0), green: (47/255.0), blue: (80/255.0), alpha: 1.0)
         
+    }
+    
+    @IBAction func UberBasInvisibleBtnClicked(sender: AnyObject) {
+        openBrowser("http://www.droptasker.com/uber/")
+    }
+    
+    func openBrowser(link:String){
+        let openLink = NSURL(string : link)
+        UIApplication.sharedApplication().openURL(openLink!)
     }
     
     override func didReceiveMemoryWarning() {
